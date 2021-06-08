@@ -1,63 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
     <title>JavaScript</title>
     <style>
-        .header{
-            text-align: center;
-            font-family: sans-serif;
-            font-size: 18px;
-            background-color: red;
-
-        }
-        .container{
-            text-align: center;
-            font-size: 30px;
-        }
+      .header {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 18px;
+        background-color: red;
+      }
+      .container {
+        text-align: center;
+        font-size: 30px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="header">
-        <h1>JavaScript</h1>
+      <h1>JavaScript</h1>
     </div>
-    <hr>
-    <div calss="container">
-
-    </div>
+    <hr />
+    <div calss="container"></div>
     <script>
-  function calisan(isim,soyisim,numara){
-      this.isim=isim;
-      this.soyisim=soyisim;
-      this.numara=numara;
-      this.bilgigoster=function(){
-          return "isim:" + this.isim + "\nSoyisim:" + this.soyisim + "\nNumara:" + this.numara;
-
+      function calisan(isim, soyisim, numara) {
+        this.isim = isim;
+        this.soyisim = soyisim;
+        this.numara = numara;
+        this.bilgigoster = function () {
+          return (
+            "isim:" +
+            this.isim +
+            "\nSoyisim:" +
+            this.soyisim +
+            "\nNumara:" +
+            this.numara
+          );
+        };
       }
 
+      function callMe() {
+        return "You called me, what do you want?";
+      }
 
-  }
-  var calisan1=new calisan("burak","kaya",123254);
-  var calisan2=new calisan("mustafa","kaya",12245);
-  console.log(calisan1.bilgigoster());
-  console.log(calisan2.bilgigoster());
-  
-   
-
-    
-   
-   
-   
-   
-    
-    
-    
-
-
-          </script>
-</body>
+      var calisan1 = new calisan("burak", "kaya", 123254);
+      var calisan2 = new calisan("mustafa", "kaya", 12245);
+      console.log(calisan1.bilgigoster());
+      console.log(calisan2.bilgigoster());
+      console.log(callMe());
+    </script>
+  </body>
 </html>
